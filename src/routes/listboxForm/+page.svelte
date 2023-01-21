@@ -25,10 +25,12 @@
 			  Password
 			  <input name="password" type="password">
 			</label>
-			<ListBox selected="{storeSingle}" label="Region:">
-				<ListBoxItem value={"EU West"}>EU West</ListBoxItem>
-				<ListBoxItem value={"US East"}>US East</ListBoxItem>
-			</ListBox>
+			<div class="card p-4 mt-2">
+				<ListBox selected="{storeSingle}" label="Region:">
+					<ListBoxItem value={"EU West"}>EU West</ListBoxItem>
+					<ListBoxItem value={"US East"}>US East</ListBoxItem>
+				</ListBox>
+			</div>
 			<button class="btn btn-filled-primary btn-base mt-3">Log in</button>
 		</div>
 	</form>
