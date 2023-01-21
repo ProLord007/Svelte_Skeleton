@@ -16,7 +16,6 @@
 	</svelte:fragment>
 	<svelte:fragment slot="sidebarLeft">
 		<AppRail selected={storeValue}>
-			<!-- (AppRailTiles Here) -->
 			<AppRailTile label="Home" title="Home" value={1} tag="a" href="/">💀</AppRailTile>
 			<AppRailTile label="ListBox Form Submission" title="ListBox Form Submission" value={2} tag="a" href="/listboxForm"/>			
 		</AppRail>		
