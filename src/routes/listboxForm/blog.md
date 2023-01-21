@@ -40,7 +40,7 @@ With a bit of Skeleton styling magic, the resulting form should look somewhat li
 ![form.png](form.png)
 
 You're all set for handling basic form handling already with that! Now, to add better user experience if JavaScript is available, SvelteKit brings the ``use:enhance`` action.   
-Since you already want to have a ListBox as part of your form, your users will need to have JavaScript enabled and we can savely add ``use:enhance`` to your form:
+Since you already want to have a ListBox as part of your form, your users will need to have JavaScript enabled and we can safely add ``use:enhance`` to your form:
 ```html
 <script lang="ts">
 	import { enhance } from '$app/forms';
