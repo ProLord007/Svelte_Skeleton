@@ -1,0 +1,25 @@
+<script lang="ts">
+	import '@skeletonlabs/skeleton/themes/theme-skeleton.css';
+	import '@skeletonlabs/skeleton/styles/all.css';
+	import '../app.postcss';
+	import { AppBar, AppRail, AppRailTile, AppShell } from '@skeletonlabs/skeleton';
+	import { writable, type Writable } from 'svelte/store';
+
+	const storeValue: Writable<number> = writable(1);
+</script>
+
+<AppShell>
+	<svelte:fragment slot="header">
+		<AppBar>
+		<div class="flex justify-center"><h1>Collection of Skeleton Examples</h1></div>
+		</AppBar>
+	</svelte:fragment>
+	<svelte:fragment slot="sidebarLeft">
+		<AppRail selected={storeValue}>
+			<!-- (AppRailTiles Here) -->
+			<AppRailTile label="Home" title="Home" value={1} tag="a" href="/">💀</AppRailTile>
+			<AppRailTile label="ListBox Form Submission" title="ListBox Form Submission" value={2} tag="a" href="/listboxForm"/>			
+		</AppRail>		
+	</svelte:fragment>
+	<slot />
+</AppShell>
