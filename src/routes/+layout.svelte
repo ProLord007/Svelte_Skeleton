@@ -11,7 +11,7 @@
 <AppShell>
 	<svelte:fragment slot="header">
 		<AppBar>
-			<div class="flex justify-center"><h1>Collection of Skeleton Examples</h1></div>
+			<div class="m-4 flex justify-center"><h1>Collection of Skeleton Examples</h1></div>
 		</AppBar>
 	</svelte:fragment>
 	<svelte:fragment slot="sidebarLeft">
