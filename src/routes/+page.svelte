@@ -2,7 +2,7 @@
 	<div class="flex justify-center w-full">
 		<p class="max-w-prose">
 			A (growing) collection of Skeleton examples that I came up with for my own enjoyment and
-			education.
+			educations.
 		</p>
 	</div>
 </div>
