@@ -8,5 +8,5 @@ export const actions: Actions = {
 			console.log(formData);
 			formData.get('chips');
 		});
-	}
+	},
 };

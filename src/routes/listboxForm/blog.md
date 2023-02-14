@@ -18,7 +18,7 @@ export const actions: Actions = {
 	default: async (event) => {
 		console.log(await event.request.formData());
 		// Do whatever the form is intended to do
-	}
+	},
 };
 ```
 

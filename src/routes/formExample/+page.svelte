@@ -18,9 +18,9 @@
 	};
 </script>
 
-<div class="flex justify-center mt-4">
+<div class="mt-4 flex justify-center">
 	<form method="POST" use:enhance={submitWithListBoxSelection}>
-		<div class="max-w-prose flex flex-col">
+		<div class="flex max-w-prose flex-col">
 			<label>
 				Name
 				<input class="input" name="name" type="text" />
@@ -29,7 +29,7 @@
 				Email
 				<input class="input" name="email" type="email" />
 			</label>
-			<div class="card p-4 mt-2">
+			<div class="card mt-2 p-4">
 				<ListBox label="Region:">
 					<ListBoxItem bind:group={region} value="EU West" name="region">EU West</ListBoxItem>
 					<ListBoxItem bind:group={region} value="US East" name="region">US East</ListBoxItem>
@@ -43,7 +43,7 @@
 			<RangeSlider name="frequency" bind:value={frequency} max={100} step={5} ticked
 				>Contact frequency</RangeSlider
 			>
-			<button class="btn btn-filled-primary mt-3">Sign up</button>
+			<button class="btn-filled-primary btn mt-3">Sign up</button>
 		</div>
 	</form>
 </div>

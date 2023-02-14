@@ -31,7 +31,7 @@ export const actions: Actions = {
 			// Correct
 			selectedChipFlavours = formData.getAll('chips');
 		});
-	}
+	},
 };
 ```
 
@@ -53,7 +53,7 @@ All you need to do is attach the correct Skeleton input class to your input elem
 </script>
 
 <form method="POST" use:enhance>
-	<div class="max-w-prose flex flex-col">
+	<div class="flex max-w-prose flex-col">
 		<label>
 			Name
 			<input class="input" name="name" type="text" />
@@ -62,7 +62,7 @@ All you need to do is attach the correct Skeleton input class to your input elem
 			Email
 			<input class="input" name="email" type="email" />
 		</label>
-		<div class="card p-4 mt-2">
+		<div class="card mt-2 p-4">
 			<ListBox label="Region:">
 				<ListBoxItem bind:group="{region}" value="EU West" name="region">EU West</ListBoxItem>
 				<ListBoxItem bind:group="{region}" value="US East" name="region">US East</ListBoxItem>
@@ -76,7 +76,7 @@ All you need to do is attach the correct Skeleton input class to your input elem
 		<RangeSlider name="frequency" bind:value="{frequency}" max="{100}" step="{5}" ticked
 			>Contact frequency</RangeSlider
 		>
-		<button class="btn btn-filled-primary btn-base mt-3">Sign up</button>
+		<button class="btn-filled-primary btn-base btn mt-3">Sign up</button>
 	</div>
 </form>
 ```
@@ -128,9 +128,9 @@ All data entered into the Form will already be gathered into a FormData object, 
 	};
 </script>
 
-<div class="flex justify-center mt-4">
+<div class="mt-4 flex justify-center">
 	<form method="POST" use:enhance="{submitWithListBoxSelection}">
-		<div class="max-w-prose flex flex-col">
+		<div class="flex max-w-prose flex-col">
 			<label>
 				Name
 				<input class="input" name="name" type="text" />
@@ -139,7 +139,7 @@ All data entered into the Form will already be gathered into a FormData object, 
 				Email
 				<input class="input" name="email" type="email" />
 			</label>
-			<div class="card p-4 mt-2">
+			<div class="card mt-2 p-4">
 				<ListBox label="Region:">
 					<ListBoxItem bind:group="{region}" value="EU West" name="region">EU West</ListBoxItem>
 					<ListBoxItem bind:group="{region}" value="US East" name="region">US East</ListBoxItem>
@@ -153,7 +153,7 @@ All data entered into the Form will already be gathered into a FormData object, 
 			<RangeSlider name="frequency" bind:value="{frequency}" max="{100}" step="{5}" ticked
 				>Contact frequency</RangeSlider
 			>
-			<button class="btn btn-filled-primary btn-base mt-3">Sign up</button>
+			<button class="btn-filled-primary btn-base btn mt-3">Sign up</button>
 		</div>
 	</form>
 </div>
