@@ -14,7 +14,8 @@
 	},
 	"lint-staged": {
 		"src/**/*.{ts,css,html,svelte}": [
-			"prettier --plugin-search-dir . --check ."
+			"prettier --plugin-search-dir . --check .",
+			"prettier --plugin-search-dir . --write ."
 		]
 	},
 	"devDependencies": {
